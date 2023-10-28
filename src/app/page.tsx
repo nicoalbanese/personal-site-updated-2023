@@ -102,7 +102,7 @@ export default function Home() {
         <li>
           <Link href="https://twitter.com/nicoalbanese10">twitter</Link> /{" "}
           <Link href="https://github.com/nicoalbanese">github</Link> /{" "}
-          <Link href="linkedin.com/in/nicoalbanese">linkedin</Link>
+          <Link href="https://linkedin.com/in/nicoalbanese">linkedin</Link>
         </li>
         <li>
           <Link href="mailto:hi@nicoalbanese.com">hi@nicoalbanese.com</Link>
