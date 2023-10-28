@@ -7,8 +7,8 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="sm:pl-10 sm:py-16 pl-4 py-10 space-y-4 font-sans font-light text-zinc-600">
-      <h1 className="font-medium sm:text-lg">Nico Albanese</h1>
-      <ul className="list-disc list-outside px-10 space-y-2 lowercase text-sm sm:text-base">
+      <h1 className="font-medium text-lg">Nico Albanese</h1>
+      <ul className="list-disc list-outside px-10 space-y-2 lowercase text-base">
         <li>Currently building something new</li>
         <li>
           Maintaining <Link href="https://kirimase.dev">Kirimase</Link> - the
