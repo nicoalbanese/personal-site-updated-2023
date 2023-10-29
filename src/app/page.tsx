@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="sm:pl-10 sm:py-16 pl-4 py-10 space-y-4 font-sans font-light text-zinc-600">
+    <main className="sm:pl-10 sm:py-16 pl-4 py-10 space-y-4 font-light text-zinc-600">
       <h1 className="font-medium text-lg">Nico Albanese</h1>
       <ul className="list-disc list-outside px-10 space-y-2 lowercase text-base">
         <li>Currently building something new</li>
@@ -43,51 +43,66 @@ export default function Home() {
         <li>Like to build things:</li>
         <ul className="list-circle list-outside sm:px-8 px-6">
           <li>
-            Dealflow OS - open-source(ish) deal flow management system (
-            <Link href="https://www.loom.com/share/8e2852c9e6874e80a1642dc1fb385bea?sid=ead1955d-66e7-46ba-b455-78d3bbd0fb76">
-              demo
-            </Link>
-            {" / "}
-            <Link href="https://github.com/nicoalbanese/df-hub-opensource">
-              github
-            </Link>
-            )
+            Dealflow OS{" "}
+            <span className="">
+              - open-source(ish) deal flow management system (
+              <Link href="https://www.loom.com/share/8e2852c9e6874e80a1642dc1fb385bea?sid=ead1955d-66e7-46ba-b455-78d3bbd0fb76">
+                demo
+              </Link>
+              {" / "}
+              <Link href="https://github.com/nicoalbanese/df-hub-opensource">
+                github
+              </Link>
+              )
+            </span>
           </li>
           <li>
-            BasExtend - chrome extension to quickly query and mutate Airtable DB
-            (
-            <Link href="https://twitter.com/nicoalbanese10/status/1385157904731361280">
-              demo
-            </Link>
-            {" / "}
-            <Link href="https://github.com/nicoalbanese/basextend-mvp">
-              github
-            </Link>
-            )
+            BasExtend{" "}
+            <span className="">
+              - chrome extension to quickly query and mutate Airtable DB (
+              <Link href="https://twitter.com/nicoalbanese10/status/1385157904731361280">
+                demo
+              </Link>
+              {" / "}
+              <Link href="https://github.com/nicoalbanese/basextend-mvp">
+                github
+              </Link>
+              )
+            </span>
           </li>
           <li>
-            Pitch to PDF - chrome extension to download pitch.com presentations
-            (
-            <Link href="https://github.com/nicoalbanese/pitch-presentation-to-pdf">
-              github
-            </Link>
-            )
+            Pitch to PDF{" "}
+            <span className="">
+              - chrome extension to download pitch.com presentations (
+              <Link href="https://github.com/nicoalbanese/pitch-presentation-to-pdf">
+                github
+              </Link>
+              )
+            </span>
           </li>
           <li>
-            Debut Sessions - live interactive pitch competition (
-            <Link href="https://www.youtube.com/channel/UCqpYTWbwTmvIMQoUAMZ39Mg/videos">
-              videos
-            </Link>
-            )
+            Debut Sessions{" "}
+            <span className="">
+              - live interactive pitch competition (
+              <Link href="https://www.youtube.com/channel/UCqpYTWbwTmvIMQoUAMZ39Mg/videos">
+                videos
+              </Link>
+              )
+            </span>
           </li>
           <li>
-            Airtable base for tracking investments and communicating with LPs (
-            <Link href="https://www.youtube.com/watch?v=Is60Iji0tZw">demo</Link>
-            {" / "}
-            <Link href="https://www.airtable.com/universe/expoadDDTsK4qWIzz/vc-portfolio-database-template">
-              template
-            </Link>
-            )
+            portfolio management system{" "}
+            <span className="">
+              - Airtable base for tracking VC portfolio (
+              <Link href="https://www.youtube.com/watch?v=Is60Iji0tZw">
+                demo
+              </Link>
+              {" / "}
+              <Link href="https://www.airtable.com/universe/expoadDDTsK4qWIzz/vc-portfolio-database-template">
+                template
+              </Link>
+              )
+            </span>
           </li>
         </ul>
         <li>
