@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 a {
-  @apply text-zinc-600 hover:text-[#407C4A] hover:font-normal  transition-all underline underline-offset-2;
+  @apply text-zinc-600 dark:text-zinc-100 hover:text-[#407C4A] hover:font-normal  transition-all underline underline-offset-2;
 }

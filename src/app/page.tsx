@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="sm:pl-10 sm:py-16 pl-4 py-10 space-y-4 font-light text-zinc-600">
+    <main className="">
       <h1 className="font-medium text-lg">Nico Albanese</h1>
       <ul className="list-disc list-outside px-10 space-y-2 lowercase text-base">
         <li>Currently building something new</li>
