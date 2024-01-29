@@ -23,9 +23,7 @@ export default function RootLayout({
           "font-light text-zinc-600 dark:text-zinc-300 dark:bg-zinc-800",
         )}
       >
-        <main className="sm:pl-10 sm:py-16 pl-4 py-10 space-y-4 ">
-          {children}
-        </main>
+        <main className="sm:pl-10 sm:py-16 pl-4 py-10">{children}</main>
       </body>
     </html>
   );

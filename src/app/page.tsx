@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="space-y-4">
       <h1 className="font-medium text-lg">Nico Albanese</h1>
       <ul className="list-disc list-outside px-10 space-y-2 lowercase text-base">
         <li>Currently building something new</li>
@@ -105,6 +105,9 @@ export default function Home() {
             </span>
           </li>
         </ul>
+        <li>
+          Occasionally <Link href="/writing">writing</Link>
+        </li>
         <li>
           Failed music producer (
           <Link href="https://open.spotify.com/track/637FSOGxwwnmU0zFJeKzQ4?si=707a7836e4004726">
