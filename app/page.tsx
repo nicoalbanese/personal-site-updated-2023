@@ -1,21 +1,21 @@
-import { BlogPosts } from 'app/components/posts'
+import { BlogPosts } from "app/components/posts";
+import { ExternalLink } from "./components/external-link";
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        Nico Albanese
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        Currently working at{" "}
+        <ExternalLink href="https://vercel.com">Vercel</ExternalLink> on the{" "}
+        <ExternalLink href="https://sdk.vercel.ai">AI SDK</ExternalLink>.
+        Creator of Kirimase, the fastest way to build Next.js applications.
       </p>
       <div className="my-8">
         <BlogPosts />
       </div>
     </section>
-  )
+  );
 }
