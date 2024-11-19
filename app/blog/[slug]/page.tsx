@@ -17,7 +17,10 @@ export async function generateMetadata({ params }: { params: Params }) {
   const { slug } = await params;
   let post = getBlogPosts().find((post) => post.slug === slug);
   if (!post) {
-    return;
+    return {
+      title: 'Not Found',
+      description: 'The page you requested could not be found.'
+    };
   }
 
   let {
