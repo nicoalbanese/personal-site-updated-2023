@@ -11,7 +11,11 @@ export default function Page() {
         Currently working at{" "}
         <ExternalLink href="https://vercel.com">Vercel</ExternalLink> on the{" "}
         <ExternalLink href="https://sdk.vercel.ai">AI SDK</ExternalLink>.
-        Creator of Kirimase, the fastest way to build Next.js applications.
+        Creator of{" "}
+        <ExternalLink href="https://kirimase.dev">Kirimase</ExternalLink>, the
+        fastest way to build{" "}
+        <ExternalLink href="https://nextjs.org">Next.js</ExternalLink>{" "}
+        applications.
       </p>
       <div className="my-8">
         <BlogPosts />
