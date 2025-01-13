@@ -10,7 +10,7 @@ export default function Home() {
       <h1 className="font-medium text-lg">Nico Albanese</h1>
       <ul className="list-disc list-outside px-10 space-y-2 lowercase text-base">
         <li>
-          currently: developer advocate @{" "}
+          currently: working on the <Link href="https://sdk.vercel.ai">AI SDK</Link> @{" "}
           <Link href="https://vercel.com">vercel</Link>
         </li>
         <li>
