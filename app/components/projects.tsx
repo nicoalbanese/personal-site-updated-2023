@@ -17,10 +17,11 @@ const projects: TProject[] = [
     repo: "https://github.com/nicoalbanese/kirimase",
   },
   {
-    title: "Semantic Image Search",
-    description: "A simple image search engine using the AI SDK and Postgres.",
-    url: "https://semantic-image-search.vercel.app",
-    repo: "https://github.com/vercel-labs/semantic-image-search",
+    title: "RAG Chatbot",
+    description:
+      "Next.js app that uses RAG to respond with proprietary information.",
+    url: "https://ai-sdk-preview-rag.vercel.app/",
+    repo: "https://github.com/vercel-labs/ai-sdk-preview-rag",
   },
   {
     title: "Natural Language Postgres",
@@ -30,17 +31,16 @@ const projects: TProject[] = [
     repo: "https://github.com/vercel-labs/natural-language-postgres",
   },
   {
+    title: "Semantic Image Search",
+    description: "A simple image search engine using the AI SDK and Postgres.",
+    url: "https://semantic-image-search.vercel.app",
+    repo: "https://github.com/vercel-labs/semantic-image-search",
+  },
+  {
     title: "AI Facts",
     description: "Validate spoken statements with Perplexity and OpenAI.",
     url: "https://ai-facts.vercel.app",
     repo: "https://github.com/vercel-labs/ai-facts",
-  },
-  {
-    title: "RAG Chatbot",
-    description:
-      "Next.js app that uses RAG to respond with proprietary information.",
-    url: "https://ai-sdk-preview-rag.vercel.app/",
-    repo: "https://github.com/vercel-labs/ai-sdk-preview-rag",
   },
   {
     title: "Chrome AI Chatbot",
@@ -66,16 +66,27 @@ const projects: TProject[] = [
   },
 ];
 
-export const Projects = () => {
+export const Projects = ({ homePage }: { homePage?: boolean }) => {
+  const show = 3;
+  const p = homePage ? projects.slice(0, 3) : projects;
+
   return (
     <div>
       <ul className="space-y-4">
-        {projects.map((project, index) => (
+        {p.map((project, index) => (
           <li key={index} className="mb-4">
             <Project {...project} />
           </li>
         ))}
       </ul>
+      {homePage && (
+        <Link href="/projects" className="block mt-6 hover:opacity-80">
+          <div className="text-sm text-neutral-600 dark:text-neutral-400 flex items-center gap-2">
+            View more projects
+            <ArrowUpRight className="h-4 w-4" />
+          </div>
+        </Link>
+      )}
     </div>
   );
 };

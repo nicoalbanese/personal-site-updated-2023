@@ -1,5 +1,6 @@
 import { BlogPosts } from "app/components/posts";
 import { ExternalLink } from "./components/external-link";
+import { Projects } from "./components/projects";
 
 export default function Page() {
   return (
@@ -7,7 +8,7 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         Nico Albanese
       </h1>
-      <p className="mb-4">
+      <p className="dark:text-neutral-100 text-neutral-900">
         Currently working on the{" "}
         <ExternalLink href="https://sdk.vercel.ai">AI SDK</ExternalLink> at{" "}
         <ExternalLink href="https://vercel.com">Vercel</ExternalLink>. Created{" "}
@@ -19,9 +20,20 @@ export default function Page() {
         Studied at USC, HKUST and Bocconi. Unfortunate Arsenal fan. Below
         average sense of humor.
       </p>
-      {/* <div className="my-8">
+      <div className="my-12">
+        <h2 className="text-xl pb-4">Projects</h2>
+        <p className="mb-4 dark:text-neutral-100 text-neutral-900">
+          I like to build things.
+        </p>
+        <Projects homePage />
+      </div>
+      <div className="my-12">
+        <h2 className="text-xl pb-4">Writing</h2>
+        <p className="mb-4 dark:text-neutral-100 text-neutral-900">
+          I occasionally write about things that the things I build.
+        </p>
         <BlogPosts />
-      </div> */}
+      </div>
     </section>
   );
 }
