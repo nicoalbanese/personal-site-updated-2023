@@ -53,7 +53,7 @@ export function getBlogPosts() {
   return getMDXData(path.join(process.cwd(), 'app', 'blog', 'posts'))
 }
 
-export function formatDate(date: string, includeRelative = false) {
+export function formatDate(date: string, includeRelative = false, format: 'full' | 'dd/mm/yyyy' | 'relative' = 'full') {
   let currentDate = new Date()
   if (!date.includes('T')) {
     date = `${date}T00:00:00`
@@ -76,11 +76,17 @@ export function formatDate(date: string, includeRelative = false) {
     formattedDate = 'Today'
   }
 
-  let fullDate = targetDate.toLocaleString('en-us', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  })
+  if (format === 'relative') {
+    return formattedDate
+  }
+
+  let fullDate = format === 'full'
+    ? targetDate.toLocaleString('en-us', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      })
+    : `${targetDate.getDate().toString().padStart(2, '0')}/${(targetDate.getMonth() + 1).toString().padStart(2, '0')}/${targetDate.getFullYear()}`
 
   if (!includeRelative) {
     return fullDate

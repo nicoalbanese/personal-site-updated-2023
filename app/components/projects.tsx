@@ -54,9 +54,9 @@ const projects: TProject[] = [
     url: "https://github.com/nicoalbanese/karozu",
   },
   {
-    title: "Dealflow OS",
+    title: "Deal Flow OS",
     description:
-      "Dealflow management system built with Next.js on top of Airtable.",
+      "Deal flow management system built with Next.js on top of Airtable.",
     url: "https://github.com/nicoalbanese/df-hub-opensource",
   },
   {

@@ -10,13 +10,9 @@
 }
 
 @font-face {
-    font-family: "berkeley mono";
+    font-family: "berkeley-mono";
     src: url("./berkeley-mono.woff2") format("woff2");
 }
-
-/* * {
-    font-family: "berkeley mono", monospace;
-} */
 
 :root {
     --sh-class: #2d5e9d;
@@ -78,6 +74,7 @@ html {
 }
 
 .prose code {
+    font-family: "berkeley-mono", monospace;
     @apply px-1 py-0.5 rounded-lg;
 }
 

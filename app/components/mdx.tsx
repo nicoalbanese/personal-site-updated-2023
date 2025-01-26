@@ -4,6 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { highlight } from "sugar-high";
 import React from "react";
 import { ExternalLink } from "./external-link";
+import { CopyButton } from "./copy-button";
 
 function Table({ data }) {
   let headers = data.headers.map((header, index) => (
@@ -52,9 +53,14 @@ function RoundedImage(props) {
 function Code({ children, ...props }) {
   let codeHTML = highlight(children);
   return (
-    <pre className="p-4">
-      <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
-    </pre>
+    <div className="relative">
+      <pre className="p-4">
+        <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
+      </pre>
+      <div className="absolute top-2 right-2">
+        <CopyButton content={children.toString()} />
+      </div>
+    </div>
   );
 }
 
