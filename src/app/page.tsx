@@ -9,7 +9,10 @@ export default function Home() {
     <main className="space-y-4">
       <h1 className="font-medium text-lg">Nico Albanese</h1>
       <ul className="list-disc list-outside px-10 space-y-2 lowercase text-base">
-        <li>Currently building something new</li>
+        <li>
+          currently: working on the <Link href="https://sdk.vercel.ai">AI SDK</Link> @{" "}
+          <Link href="https://vercel.com">vercel</Link>
+        </li>
         <li>
           Maintaining <Link href="https://kirimase.dev">Kirimase</Link> - the
           fastest way to build full-stack{" "}
