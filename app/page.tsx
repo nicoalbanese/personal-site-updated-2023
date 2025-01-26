@@ -22,16 +22,10 @@ export default function Page() {
       </p>
       <div className="my-12">
         <h2 className="text-xl pb-4">Projects</h2>
-        <p className="mb-4 dark:text-neutral-100 text-neutral-900">
-          I like to build things.
-        </p>
         <Projects homePage />
       </div>
       <div className="my-12">
         <h2 className="text-xl pb-4">Writing</h2>
-        <p className="mb-4 dark:text-neutral-100 text-neutral-900">
-          I occasionally write about things that the things I build.
-        </p>
         <BlogPosts />
       </div>
     </section>
