@@ -1,12 +1,8 @@
 ---
-title: "Deal Flow OS"
-description: "Dealflow OS: an open-source dealflow management system"
-date: 10/3/2023
+title: "Introducing Deal Flow OS"
+summary: "An open-source deal flow management system"
+publishedAt: "2023-03-10"
 ---
-
-#### March 10th, 2023
-
-# Dealflow OS
 
 I'm excited to release Deal Flow OS, an open-source(ish) deal flow management system. This system was built to cover the deal flow management requirements of Ascension, an early-stage VC fund.
 
@@ -24,7 +20,7 @@ While Airtable covers all of the basic needs for a comprehensive deal flow manag
 
 ## Features
 
-### Front End
+#### Front End
 
 When you log onto your Deal Flow Hub, you have four options: Pipelines, Add Company, Add Note, and Triage Inbound Pipeline. The Pipelines feature allows you to bookmark the main pipelines (views that you can configure based on your requirements) you want quick access to. Adding a company to the pipeline is quick and easy with the Add Company feature. The Add Note feature provides a quick link to take notes on calls. The final option, and my favorite feature, is the Triage Inbound Pipeline.
 
@@ -32,7 +28,7 @@ For context, Ascension receives over 1500 applications for investment a year thr
 
 The role of triaging is as simple as deciding if something is potential fit for one of our funds. If so, we should schedule a first call, if not, we should send an email passing on the opportunity and update our system. One way to improve this is to ask better objective questions and then build automations to process applications based on logic (super easy to do with Airtable 🙂). But, that can only take you so far, and I always dreamed of having an interface that presented the most important information and then an easy way to action. And that is how and why the Triage Inbound Pipeline (below) was built.
 
-### Back End
+#### Back End
 
 The Airtable base has an opinionated pre-built schema with views and forms to cover basic needs such as accepting applications and submitting notes. It also has several basic automations that are status-based, interval-based, and event-based.
 
