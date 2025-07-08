@@ -10,11 +10,25 @@ type TProject = {
 
 const projects: TProject[] = [
   {
+    title: "AI SDK by Vercel",
+    description:
+      "The AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more.",
+    url: "https://ai-sdk.dev",
+    repo: "https://github.com/vercel/ai",
+  },
+  {
     title: "Kirimase",
     description:
       "The fastest way to start Next.js projects. Open-source CLI inspired by the Ruby on Rails CLI and Ruby Gems.",
     url: "https://kirimase.dev",
     repo: "https://github.com/nicoalbanese/kirimase",
+  },
+  {
+    title: "Computer Use Agent",
+    description:
+      "Computer-using agent built with Next.js and the AI SDK",
+    url: "https://ai-sdk-computer-use.vercel.app/",
+    repo: "https://github.com/vercel-labs/ai-sdk-computer-use",
   },
   {
     title: "RAG Chatbot",
@@ -41,6 +55,25 @@ const projects: TProject[] = [
     description: "Validate spoken statements with Perplexity and OpenAI.",
     url: "https://ai-facts.vercel.app",
     repo: "https://github.com/vercel-labs/ai-facts",
+  },
+  {
+    title: "AI SDK Slackbot",
+    description: "AI-powered Slack bot built with the AI SDK.",
+    url: "https://github.com/vercel-labs/ai-sdk-slackbot",
+    repo: "https://github.com/vercel-labs/ai-sdk-slackbot",
+  },
+  {
+    title: "Multi-Image Generator",
+    description: "Generate multiple images simultaneously using the AI SDK.",
+    url: "https://ai-sdk-image-generator.vercel.app/",
+    repo: "https://github.com/vercel-labs/ai-sdk-image-generator",
+  },
+  {
+    title: "PDF to Multiple Choice Quiz",
+    description:
+      "Convert PDF documents into interactive multiple choice quizzes.",
+    url: "https://ai-sdk-preview-pdf-support.vercel.app/",
+    repo: "https://github.com/vercel-labs/ai-sdk-preview-pdf-support",
   },
   {
     title: "Chrome AI Chatbot",

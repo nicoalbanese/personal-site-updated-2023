@@ -9,7 +9,7 @@ export default function Page() {
         I love building things that can help make life better in any way. I also
         love building things to learn how to use something new. I&apos;m lucky
         to spend my days thinking of cool things to build with the <ExternalLink href="https://sdk.vercel.ai">AI SDK</ExternalLink>. Here
-        are a few projects I&apos;ve built.
+        are a few projects I&apos;ve built or worked on.
       </p>
       <div className="my-8">
         <Projects />
