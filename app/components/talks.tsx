@@ -124,7 +124,7 @@ const Talk = ({ title, event, url, videoId, description }: TTalk) => {
               {event}
             </p>
             {description && (
-              <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-1">
+              <p className="sm:block hidden text-neutral-600 dark:text-neutral-400 text-sm mt-1">
                 {description}
               </p>
             )}
