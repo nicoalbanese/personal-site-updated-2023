@@ -112,7 +112,6 @@ const Talk = ({ title, event, url, videoId, description }: TTalk) => {
           fill
           className="object-cover"
           sizes="128px"
-          unoptimized
         />
       </div>
       <div className="flex-1 min-w-0">
