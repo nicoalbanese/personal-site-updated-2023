@@ -1,6 +1,7 @@
 import { BlogPosts } from "app/components/posts";
 import { ExternalLink } from "./components/external-link";
 import { Projects } from "./components/projects";
+import { Talks } from "./components/talks";
 
 export default function Page() {
   return (
@@ -23,6 +24,10 @@ export default function Page() {
       <div className="my-12">
         <h2 className="text-xl pb-4">Projects</h2>
         <Projects homePage />
+      </div>
+      <div className="my-12">
+        <h2 className="text-xl pb-4">Talks</h2>
+        <Talks homePage />
       </div>
       <div className="my-12">
         <h2 className="text-xl pb-4">Writing</h2>

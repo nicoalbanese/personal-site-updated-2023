@@ -1,4 +1,4 @@
-import { ArrowUp, ArrowUpRight, Star } from "lucide-react";
+import { ArrowUpRight, Star } from "lucide-react";
 import Link from "next/link";
 
 type TProject = {
@@ -31,7 +31,7 @@ const projects: TProject[] = [
     repo: "https://github.com/vercel-labs/ai-sdk-computer-use",
   },
   {
-    title: "RAG Chatbot",
+    title: "RAG Agent",
     description:
       "Next.js app that uses RAG to respond with proprietary information.",
     url: "https://ai-sdk-preview-rag.vercel.app/",
@@ -57,7 +57,7 @@ const projects: TProject[] = [
     repo: "https://github.com/vercel-labs/ai-facts",
   },
   {
-    title: "AI SDK Slackbot",
+    title: "AI SDK Slack Agent",
     description: "AI-powered Slack bot built with the AI SDK.",
     url: "https://github.com/vercel-labs/ai-sdk-slackbot",
     repo: "https://github.com/vercel-labs/ai-sdk-slackbot",
@@ -76,8 +76,8 @@ const projects: TProject[] = [
     repo: "https://github.com/vercel-labs/ai-sdk-preview-pdf-support",
   },
   {
-    title: "Chrome AI Chatbot",
-    description: "Chatbot using the model built-in to Chrome browsers.",
+    title: "Chrome AI Agent",
+    description: "Agent using the model built-in to Chrome browsers.",
     url: "https://ai-sdk-chrome-ai.vercel.app/",
     repo: "https://github.com/nicoalbanese/ai-sdk-chrome-ai",
   },
