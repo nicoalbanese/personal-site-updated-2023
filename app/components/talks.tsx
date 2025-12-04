@@ -12,6 +12,20 @@ type TTalk = {
 
 const talks: TTalk[] = [
   {
+    title: "Ship AI Keynote",
+    event: "Vercel Ship AI",
+    url: "https://youtu.be/mZzAuFq5C6Q?si=buG5e4IfB202tNR5&t=725",
+    videoId: "mZzAuFq5C6Q",
+    description: "Keynote presentation at Vercel Ship AI.",
+  },
+  {
+    title: "So you've built an agent, now what?",
+    event: "TypeScript AI Conference",
+    url: "https://www.youtube.com/watch?v=ZRsXh0b2euw",
+    videoId: "ZRsXh0b2euw",
+    description: "Building type-safe applications with the AI SDK",
+  },
+  {
     title: "Build a Coding Agent with the AI SDK",
     event: "Vercel Ship 2025",
     url: "https://www.youtube.com/watch?v=1bx-eosOOkE",
