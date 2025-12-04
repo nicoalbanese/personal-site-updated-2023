@@ -19,11 +19,11 @@ const talks: TTalk[] = [
     description: "Keynote presentation at Vercel Ship AI.",
   },
   {
-    title: "so you've built an agent, now what",
+    title: "So you've built an agent, now what?",
     event: "TypeScript AI Conference",
     url: "https://www.youtube.com/watch?v=ZRsXh0b2euw",
     videoId: "ZRsXh0b2euw",
-    description: "building type-safe applications with the AI SDK",
+    description: "Building type-safe applications with the AI SDK",
   },
   {
     title: "Build a Coding Agent with the AI SDK",
