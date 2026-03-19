@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Nico Albanese
+        Howdy! I'm Nico Albanese
       </h1>
       <p className="dark:text-neutral-100 text-neutral-900">
         Currently working on the{" "}
