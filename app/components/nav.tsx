@@ -13,6 +13,9 @@ const navItems = {
   "/talks": {
     name: "talks",
   },
+  "/faq": {
+    name: "faq",
+  },
 };
 
 export function Navbar() {
