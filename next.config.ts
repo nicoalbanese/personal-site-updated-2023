@@ -5,6 +5,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/aie",
+        destination: "https://aie-london-companion.vercel.app/docs",
+        permanent: true,
+      },
+      {
         source: "/writing/vc-os",
         destination: "/blog/vc-os",
         permanent: true,
