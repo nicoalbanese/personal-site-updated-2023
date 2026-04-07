@@ -2,16 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   transpilePackages: ["next-mdx-remote"],
-  async rewrites() {
+  async redirects() {
     return [
       {
         source: "/aie",
         destination: "https://aie-london-companion.vercel.app/docs",
+        permanent: true,
       },
-    ];
-  },
-  async redirects() {
-    return [
       {
         source: "/writing/vc-os",
         destination: "/blog/vc-os",
