@@ -1,5 +1,7 @@
 # Portfolio Blog Starter
 
+howdy, world
+
 This is a porfolio site template complete with a blog. Includes:
 
 - MDX and Markdown support
