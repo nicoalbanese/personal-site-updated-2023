@@ -10,6 +10,13 @@ type TProject = {
 
 const projects: TProject[] = [
   {
+    title: "Open Agents",
+    description:
+      "Open-source app for spawning cloud coding agents with GitHub, sandboxes, and durable workflows on Vercel.",
+    url: "https://open-agents.dev",
+    repo: "https://github.com/vercel-labs/open-agents",
+  },
+  {
     title: "AI SDK by Vercel",
     description:
       "The AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more.",
