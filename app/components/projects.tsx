@@ -134,14 +134,26 @@ export const Projects = ({ homePage }: { homePage?: boolean }) => {
 const getGithubStars = async (repo?: string) => {
   if (!repo) return null;
   try {
+    const headers: HeadersInit = process.env.GITHUB_TOKEN
+      ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+      : {};
+
     const response = await fetch(
       repo.replace("github.com", "api.github.com/repos"),
       {
-        headers: {
-          Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-        },
+        headers,
       },
     );
+
+    if (!response.ok) {
+      console.error(
+        "GitHub stars fetch failed:",
+        response.status,
+        await response.text(),
+      );
+      return null;
+    }
+
     const data = await response.json();
     return data.stargazers_count as number;
   } catch (error) {
