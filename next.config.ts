@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/sainsburys",
+        destination: "https://sainsburys-talk.vercel.app/",
+        permanent: true,
+      },
+      {
         source: "/writing/vc-os",
         destination: "/blog/vc-os",
         permanent: true,
