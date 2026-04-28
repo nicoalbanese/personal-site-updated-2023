@@ -33,6 +33,7 @@ export default function Page() {
         <h2 className="text-xl pb-4">Writing</h2>
         <BlogPosts />
       </div>
+      <p>howdy</p>
     </section>
   );
 }
