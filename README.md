@@ -1,6 +1,7 @@
 # Portfolio Blog Starter
 
 hello
+howdy
 
 This is a porfolio site template complete with a blog. Includes:
 
