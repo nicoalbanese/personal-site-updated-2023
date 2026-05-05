@@ -51,7 +51,12 @@ function RoundedImage(props) {
 }
 
 function Code({ children, ...props }) {
+  if (!props.className) {
+    return <code {...props}>{children}</code>;
+  }
+
   let codeHTML = highlight(children);
+
   return (
     <div className="relative">
       <pre className="p-4">
