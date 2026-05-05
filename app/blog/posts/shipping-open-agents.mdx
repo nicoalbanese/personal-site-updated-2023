@@ -1,0 +1,104 @@
+---
+title: "Shipping open-agents"
+summary: "Inside the launch of vercel-labs/open-agents, an open-source reference app for building and running background coding agents on Vercel."
+publishedAt: "2026-05-05"
+---
+
+We shipped [vercel-labs/open-agents](https://github.com/vercel-labs/open-agents), an open-source reference app for building and running background coding agents on Vercel.
+
+What I like most about the project is that it does not pretend the hard part is just picking a model. The interesting work is everything around the model: the workflow runtime, the sandbox lifecycle, the UI, the repo integration, and the guardrails that make an agent usable in a real codebase instead of just impressive in a demo.
+
+## What it actually is
+
+Open Agents is built as a three-layer system:
+
+```text
+Web -> Agent workflow -> Sandbox VM
+```
+
+The web app handles auth, sessions, chat, streaming, and the user-facing product surface. The agent itself runs as a durable workflow on Vercel. The sandbox is a separate execution environment with a filesystem, shell, git access, and exposed preview ports.
+
+That separation is the key architectural decision in the project: the agent is not the sandbox.
+
+Instead of putting the model loop directly inside the VM, open-agents keeps the agent outside the sandbox and lets it interact through tools like file reads, edits, search, shell commands, and web fetches. That gives you a cleaner control plane and a more flexible execution model.
+
+A few benefits fall out of that design:
+
+- agent execution is not tied to a single request lifecycle
+- sandbox lifecycle can hibernate and resume independently
+- model providers and sandbox implementations can evolve separately
+- the VM stays a plain execution environment rather than becoming the orchestration layer
+
+## What shipped
+
+The current repo is much more than a prompt wrapper.
+
+It includes:
+
+- a Next.js web app for chat, auth, sessions, and streaming UI
+- a durable workflow-backed agent runtime
+- sandbox orchestration for isolated Vercel VMs
+- repo cloning and branch-based work inside the sandbox
+- a tool system for files, search, shell, tasks, skills, and web access
+- GitHub integration for installs, pushes, and optional PR creation
+- session sharing via read-only links
+- optional voice input via ElevenLabs transcription
+
+The repo layout makes that split pretty explicit:
+
+- `apps/web` for the product surface, auth, workflows, and chat UI
+- `packages/agent` for the agent, models, tools, skills, subagents, and system prompt
+- `packages/sandbox` for the sandbox abstraction and Vercel sandbox integration
+- `packages/shared` for shared utilities
+
+I like that the project is opinionated without being opaque. It is meant to be forked and adapted, not treated like a sealed black box.
+
+## The parts that matter
+
+What makes a coding agent useful is rarely the flashy part.
+
+In open-agents, the practical value comes from a few decisions that push the system toward reliability.
+
+### Durable execution
+
+Chat requests do not run the whole agent inline. They start a workflow run. That means an agent turn can continue across many persisted steps, survive reconnects, and support cancellation and resumption in a way that feels much closer to a real long-running task than a normal request-response loop.
+
+### Real isolation
+
+The sandboxes are separate VMs with snapshot-based resume and routable ports like `3000`, `5173`, `4321`, and `8000`. That matters because it keeps the execution environment realistic. The agent can work with the same primitives developers actually use: files, shell commands, git state, and dev servers.
+
+### Tooling over theater
+
+A lot of agent products stop at “it can call tools.” Open Agents goes further by making the tool layer central to the whole experience. File operations, search, shell access, subagents, and structured user questions are not side features; they are the way the agent gets real work done.
+
+### Guardrails
+
+The repository is full of opinions that are easy to gloss over but extremely important in practice: read before editing, prefer minimal fixes, use project scripts for verification, avoid surprise multi-file changes, and keep the system inspectable. Those rules are part of the product.
+
+## Why this project is interesting to me
+
+Open-agents is a good example of a broader shift in how agent products are getting built.
+
+The winning pattern is starting to look less like “put a frontier model in a chat box” and more like “compose a model with durable execution, explicit tools, structured context, and a UI that helps humans stay in control.”
+
+That is also why shipping it as open source matters.
+
+You can inspect the architecture, the prompts, the tool definitions, the runtime assumptions, the required environment variables, and the repo integration model. If you want to swap pieces out, you can. If you disagree with a workflow decision, you can change it. If you want to use the project as a base for your own agent product, that is the point.
+
+## What it takes to run
+
+One detail I appreciated while looking through the repo is that it is honest about operational complexity.
+
+A minimal deployment needs a database and secrets like `POSTGRES_URL` and `JWE_SECRET`. A useful hosted deployment also needs token encryption and Vercel OAuth. If you want the full repo-connected coding flow, you add the GitHub App credentials as well.
+
+That may sound like setup overhead, but it is also a sign that the project is solving a real problem. Going from prompt to code changes without keeping your laptop involved requires actual infrastructure.
+
+## What I learned from shipping it
+
+The biggest lesson is that good agent experiences are systems, not prompts.
+
+You need orchestration. You need isolation. You need recoverability. You need good defaults. You need visibility into what the agent is doing. And you need just enough product polish that all of that power feels approachable instead of chaotic.
+
+Open Agents gets interesting because it treats those concerns as first-class parts of the build, not implementation details hidden behind a demo.
+
+If you want to see the project or build on top of it, check out [vercel-labs/open-agents](https://github.com/vercel-labs/open-agents) and the live demo at [open-agents.dev](https://open-agents.dev).
