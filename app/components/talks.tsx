@@ -78,12 +78,19 @@ const talks: TTalk[] = [
       "Getting started with AI development in the modern JavaScript ecosystem.",
   },
   {
-      title: "AI SDK 3.1",
-      event: "Vercel",
-      description: "Learn about AI SDK 3.1.",
-      url: "https://www.youtube.com/watch?v=UDm-hvwpzBI",
-      videoId: "UDm-hvwpzBI",
-    },
+    title: "AI SDK 3.1",
+    event: "Vercel",
+    description: "Learn about AI SDK 3.1.",
+    url: "https://www.youtube.com/watch?v=UDm-hvwpzBI",
+    videoId: "UDm-hvwpzBI",
+  },
+  {
+    title: "Give Your Agent a Computer",
+    event: "AI Engineer",
+    url: "https://www.youtube.com/watch?v=wflNENRSUb4",
+    videoId: "wflNENRSUb4",
+    description: "Talk on giving agents computer-use capabilities.",
+  },
 ];
 
 export const Talks = ({ homePage }: { homePage?: boolean }) => {
