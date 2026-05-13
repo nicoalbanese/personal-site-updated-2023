@@ -19,6 +19,13 @@ const talks: TTalk[] = [
     description: "Keynote presentation at Vercel Ship AI.",
   },
   {
+    title: "Give Your Agent a Computer",
+    event: "AI Engineer",
+    url: "https://www.youtube.com/watch?v=wflNENRSUb4",
+    videoId: "wflNENRSUb4",
+    description: "Talk on giving agents computer-use capabilities.",
+  },
+  {
     title: "So you've built an agent, now what?",
     event: "TypeScript AI Conference",
     url: "https://www.youtube.com/watch?v=ZRsXh0b2euw",
@@ -83,13 +90,6 @@ const talks: TTalk[] = [
     description: "Learn about AI SDK 3.1.",
     url: "https://www.youtube.com/watch?v=UDm-hvwpzBI",
     videoId: "UDm-hvwpzBI",
-  },
-  {
-    title: "Give Your Agent a Computer",
-    event: "AI Engineer",
-    url: "https://www.youtube.com/watch?v=wflNENRSUb4",
-    videoId: "wflNENRSUb4",
-    description: "Talk on giving agents computer-use capabilities.",
   },
 ];
 
