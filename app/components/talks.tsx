@@ -23,7 +23,7 @@ const talks: TTalk[] = [
     event: "AI Engineer",
     url: "https://www.youtube.com/watch?v=wflNENRSUb4",
     videoId: "wflNENRSUb4",
-    description: "Using AI SDK 6 to give an agent a sandboxed filesystem, a core primitive for long-running agents.",
+    description: "Powered by AI SDK 6 and Vercel Sandbox.",
   },
   {
     title: "So you've built an agent, now what?",
