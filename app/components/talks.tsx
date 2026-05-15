@@ -23,7 +23,7 @@ const talks: TTalk[] = [
     event: "AI Engineer",
     url: "https://www.youtube.com/watch?v=wflNENRSUb4",
     videoId: "wflNENRSUb4",
-    description: "Talk on giving agents a sandboxed computer they can use and run in for extended periods.",
+    description: "Giving agents a sandboxed computer to use over time.",
   },
   {
     title: "So you've built an agent, now what?",
