@@ -24,6 +24,13 @@ const projects: TProject[] = [
     repo: "https://github.com/vercel/ai",
   },
   {
+    title: "AI SDK DevTools",
+    description:
+      "Local devtools for debugging AI SDK apps and inspecting requests, responses, and tool calls.",
+    url: "https://npmx.dev/package/@ai-sdk/devtools",
+    repo: "https://github.com/vercel/ai/tree/main/packages/devtools",
+  },
+  {
     title: "Kirimase",
     description:
       "The fastest way to start Next.js projects. Open-source CLI inspired by the Ruby on Rails CLI and Ruby Gems.",
