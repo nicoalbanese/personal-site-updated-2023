@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     default: 'Nico Albanese',
     template: '%s | Nico Albanese',
   },
-  description: 'Working on the AI SDK at Vercel',
+  description: 'Member of Technical Staff at OpenAI, working on the Codex app',
   openGraph: {
     title: 'Nico Albanese',
-    description: 'Working on the AI SDK at Vercel',
+    description: 'Member of Technical Staff at OpenAI, working on the Codex app',
     url: baseUrl,
     siteName: 'Nico Albanese',
     locale: 'en_US',
