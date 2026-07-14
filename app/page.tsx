@@ -10,11 +10,15 @@ export default function Page() {
         Nico Albanese
       </h1>
       <p className="dark:text-neutral-100 text-neutral-900">
-        Currently working on the{" "}
+        Member of Technical Staff at{" "}
+        <ExternalLink href="https://openai.com">OpenAI</ExternalLink>, working on
+        the <ExternalLink href="https://openai.com/codex">Codex</ExternalLink> app.
+        Previously helped build and scale the{" "}
         <ExternalLink href="https://sdk.vercel.ai">AI SDK</ExternalLink> at{" "}
-        <ExternalLink href="https://vercel.com">Vercel</ExternalLink>. Created{" "}
-        <ExternalLink href="https://kirimase.dev">Kirimase</ExternalLink>, the
-        fastest way to start{" "}
+        <ExternalLink href="https://vercel.com">Vercel</ExternalLink> from 50k
+        to 15 million weekly downloads. Created{" "}
+        <ExternalLink href="https://kirimase.dev">Kirimase</ExternalLink>{" "}
+        (acquired by Vercel), the fastest way to start{" "}
         <ExternalLink href="https://nextjs.org">Next.js</ExternalLink>{" "}
         applications. Previously investing in pre-seed startups at{" "}
         <ExternalLink href="https://ascension.vc">Ascension</ExternalLink>.
