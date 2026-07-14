@@ -14,7 +14,7 @@ export default function Page() {
         <ExternalLink href="https://openai.com">OpenAI</ExternalLink>, working on
         the <ExternalLink href="https://openai.com/codex">Codex</ExternalLink> app.
         Previously helped build and scale the{" "}
-        <ExternalLink href="https://sdk.vercel.ai">AI SDK</ExternalLink> at{" "}
+        <ExternalLink href="https://ai-sdk.dev">AI SDK</ExternalLink> at{" "}
         <ExternalLink href="https://vercel.com">Vercel</ExternalLink> from 50k
         to 15 million weekly downloads. Created{" "}
         <ExternalLink href="https://kirimase.dev">Kirimase</ExternalLink>{" "}
